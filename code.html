@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMORA — Luxury Sustainable Apparel | Wear the Future. Naturally.</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed-variant": "#424939",
+            "on-error-container": "#93000a",
+            "on-secondary-container": "#5e6554",
+            "on-primary-fixed": "#1c1b1b",
+            "surface-container-low": "#f5f3ef",
+            "error": "#ba1a1a",
+            "tertiary-container": "#24190f",
+            "inverse-primary": "#c8c6c5",
+            "secondary": "#5a6150",
+            "surface-container-highest": "#e4e2de",
+            "on-primary-container": "#858383",
+            "primary": "#000000",
+            "on-surface-variant": "#444748",
+            "tertiary": "#000000",
+            "surface-container-high": "#eae8e4",
+            "surface-bright": "#fbf9f5",
+            "on-surface": "#1b1c1a",
+            "surface-dim": "#dbdad6",
+            "on-tertiary-fixed": "#24190f",
+            "outline": "#747878",
+            "on-tertiary-fixed-variant": "#524438",
+            "inverse-on-surface": "#f2f0ed",
+            "inverse-surface": "#30312e",
+            "surface-variant": "#e4e2de",
+            "on-background": "#1b1c1a",
+            "background": "#fbf9f5",
+            "secondary-fixed-dim": "#c2c9b5",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#c4c7c7",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "primary-fixed-dim": "#c8c6c5",
+            "on-secondary-fixed": "#171d10",
+            "primary-fixed": "#e5e2e1",
+            "surface-container": "#efeeea",
+            "on-tertiary-container": "#928173",
+            "secondary-fixed": "#dee5d0",
+            "surface": "#fbf9f5",
+            "on-primary": "#ffffff",
+            "surface-tint": "#5f5e5e",
+            "error-container": "#ffdad6",
+            "primary-container": "#1c1b1b",
+            "tertiary-fixed": "#f4dfce",
+            "secondary-container": "#dbe2cd",
+            "on-primary-fixed-variant": "#474646",
+            "tertiary-fixed-dim": "#d7c3b3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "margin-desktop": "4rem",
+            "gutter-desktop": "2.5rem",
+            "space-lg": "1.75rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem",
+            "space-md": "1rem",
+            "space-xl": "3rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "500" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.14em", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "300" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Hide scrollbar for category tabs */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-secondary selection:text-white relative">
+<!-- =========================================================================
+       1. PRELOADER
+  ========================================================================= -->
+<div class="fixed inset-0 z-[100] bg-surface flex flex-col items-center justify-center transition-opacity duration-700 pointer-events-auto" id="preloader">
+<div class="text-center px-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-3">Atelier De Couture Durable</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight uppercase">LUMORA</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mt-2">Wear the Future. Naturally.</p>
+<div class="w-48 h-[2px] bg-surface-container-highest mt-8 mx-auto overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-primary transition-all duration-300 w-0" id="preloader-bar"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-3 block tracking-widest" id="preloader-text">INITIATING ATELIER · 0%</span>
+</div>
+</div>
+<!-- =========================================================================
+       2. ANNOUNCEMENT BAR
+  ========================================================================= -->
+<div class="bg-primary text-on-primary py-2 px-4 text-center font-label-sm text-label-sm tracking-widest border-b border-primary-container relative z-40">
+<div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+<span>Complimentary worldwide carbon-neutral delivery on orders above $200 · Transparent Atelier Practices</span>
+</div>
+</div>
+<!-- =========================================================================
+       3. TOP NAVIGATION (Shared Component Implementation)
+  ========================================================================= -->
+<header class="bg-surface/90 backdrop-blur-md text-primary border-b border-outline-variant/30 sticky top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 lg:px-12 py-4 max-w-7xl mx-auto">
+<!-- Mobile Drawer Trigger & Brand Monogram -->
+<div class="flex items-center gap-4 lg:hidden">
+<button aria-label="Open Navigation Drawer" class="text-primary p-1 focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<button aria-label="Search" class="text-primary p-1" onclick="toggleSearchModal()">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md tracking-tight uppercase text-primary hover:opacity-80 transition-opacity" href="#">
+        LUMORA
+      </a>
+<!-- Desktop Nav Cluster (Exact JSON Links) -->
+<nav class="hidden lg:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-label-md font-label-md uppercase tracking-wider" href="#collections">Collections</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-label-md font-label-md uppercase tracking-wider" href="#lookbook">Lookbook</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-label-md font-label-md uppercase tracking-wider" href="#craft">Our Craft</a>
+<button class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-label-md font-label-md uppercase tracking-wider" onclick="toggleSizeGuide(true)">Size Guide</button>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-label-md font-label-md uppercase tracking-wider" href="#stores">Store Locator</a>
+<a class="text-on-surface-variant hover:text-primary pb-1 transition-colors text-label-md font-label-md uppercase tracking-wider" href="#contact">Contact</a>
+</nav>
+<!-- Right Utility Actions -->
+<div class="flex items-center space-x-4 lg:space-x-6">
+<!-- Currency Selector -->
+<div class="hidden sm:flex items-center text-label-sm font-label-sm uppercase tracking-wider border-r border-outline-variant/40 pr-4">
+<select class="bg-transparent border-none py-0 pl-1 pr-6 text-on-surface-variant focus:ring-0 text-label-sm cursor-pointer font-label-sm">
+<option value="USD">USD ($)</option>
+<option value="EUR">EUR (€)</option>
+<option value="GBP">GBP (£)</option>
+</select>
+</div>
+<!-- Search Modal Trigger -->
+<button aria-label="Open Search" class="hidden lg:inline-flex text-primary hover:text-secondary transition-colors" onclick="toggleSearchModal()">
+<span class="material-symbols-outlined">search</span>
+</button>
+<!-- Wishlist -->
+<button aria-label="View Wishlist" class="relative text-primary hover:text-secondary transition-colors" onclick="showToast('Wishlist updated (2 preserved items)')">
+<span class="material-symbols-outlined">favorite</span>
+<span class="absolute -top-1.5 -right-2 bg-secondary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</button>
+<!-- Shopping Bag Trigger -->
+<button aria-label="Open Shopping Bag" class="relative text-primary hover:text-secondary transition-colors" onclick="toggleCartDrawer(true)">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1.5 -right-2 bg-primary text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center" id="bag-count">1</span>
+</button>
+<!-- Trailing Primary Action (Shop Collection) -->
+<a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary hover:bg-secondary transition-colors px-5 py-2 text-label-md font-label-md uppercase tracking-wider rounded-none" href="#catalog">
+          Shop Collection
+        </a>
+</div>
+</div>
+</header>
+<!-- =========================================================================
+       4. MOBILE NAVIGATION DRAWER (Shared Component Implementation)
+  ========================================================================= -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden transition-opacity duration-300" id="side-drawer-backdrop" onclick="toggleMobileDrawer(false)"></div>
+<aside class="fixed top-0 left-0 h-full w-80 max-w-[85vw] z-50 bg-surface border-r border-outline-variant/30 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between" id="side-drawer">
+<div class="p-6">
+<div class="flex items-center justify-between pb-6 border-b border-outline-variant/30">
+<div>
+<span class="text-headline-md font-headline-md tracking-tight uppercase text-primary">LUMORA</span>
+<p class="font-body-sm text-body-sm text-secondary">Sustainable Haute Couture</p>
+</div>
+<button aria-label="Close menu" class="text-primary hover:text-secondary" onclick="toggleMobileDrawer(false)">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="mt-8 flex flex-col space-y-4 font-label-md text-label-md uppercase tracking-wider">
+<a class="text-primary font-semibold border-l-2 border-primary pl-4 py-2 flex items-center gap-3" href="#collections" onclick="toggleMobileDrawer(false)">
+<span class="material-symbols-outlined text-xl">checkroom</span> Collections
+        </a>
+<a class="text-on-surface-variant hover:text-primary pl-4 py-2 transition-colors flex items-center gap-3" href="#lookbook" onclick="toggleMobileDrawer(false)">
+<span class="material-symbols-outlined text-xl">auto_stories</span> Lookbook
+        </a>
+<a class="text-on-surface-variant hover:text-primary pl-4 py-2 transition-colors flex items-center gap-3" href="#craft" onclick="toggleMobileDrawer(false)">
+<span class="material-symbols-outlined text-xl">eco</span> Our Craft
+        </a>
+<button class="text-left text-on-surface-variant hover:text-primary pl-4 py-2 transition-colors flex items-center gap-3" onclick="toggleMobileDrawer(false); toggleSizeGuide(true);">
+<span class="material-symbols-outlined text-xl">straighten</span> Size Guide
+        </button>
+<a class="text-on-surface-variant hover:text-primary pl-4 py-2 transition-colors flex items-center gap-3" href="#stores" onclick="toggleMobileDrawer(false)">
+<span class="material-symbols-outlined text-xl">storefront</span> Store Locator
+        </a>
+<a class="text-on-surface-variant hover:text-primary pl-4 py-2 transition-colors flex items-center gap-3" href="#contact" onclick="toggleMobileDrawer(false)">
+<span class="material-symbols-outlined text-xl">mail</span> Contact
+        </a>
+</nav>
+</div>
+<div class="p-6 border-t border-outline-variant/30 space-y-4">
+<a class="w-full py-3 bg-primary text-on-primary text-center block text-label-md font-label-md uppercase tracking-wider hover:bg-secondary transition-colors" href="#catalog" onclick="toggleMobileDrawer(false)">
+        Shop Collection
+      </a>
+<div class="flex items-center justify-around text-on-surface-variant pt-2">
+<button class="flex flex-col items-center text-xs tracking-wider" onclick="toggleMobileDrawer(false); toggleSearchModal();">
+<span class="material-symbols-outlined mb-1">search</span> Search
+        </button>
+<button class="flex flex-col items-center text-xs tracking-wider" onclick="toggleMobileDrawer(false); showToast('Viewing saved wishlist items');">
+<span class="material-symbols-outlined mb-1">favorite</span> Wishlist
+        </button>
+<button class="flex flex-col items-center text-xs tracking-wider" onclick="toggleMobileDrawer(false); toggleCartDrawer(true);">
+<span class="material-symbols-outlined mb-1">shopping_bag</span> Cart
+        </button>
+</div>
+</div>
+</aside>
+<!-- =========================================================================
+       5. HERO SECTION
+  ========================================================================= -->
+<section class="relative min-h-[90vh] flex items-center justify-center bg-surface-container-low overflow-hidden border-b border-outline-variant/30">
+<!-- Hero Background Image (Portrait Editorial) -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center filter brightness-[0.96]" data-alt="A striking minimalist high-fashion editorial portrait of a tall model in an oversized undyed organic wool coat and raw linen ecru trousers, posing with architectural poise against a serene off-white gallery wall flooded in soft natural daylight, emphasizing clean contours, serene organic simplicity, and refined luxury textiles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN0XbsfxkvWalQuSA0K_83nX_z3rUbB-YlXWJycCPjAp_5jaNIm_2nn5rOTtp5UJ4dPPUsT4qpOtsDGM6GzrPvZkA615I2WJFF5vSYGrSpHNgeO_OxY86lgGSCOXQX49xEAWTNT5GecKqbotq7M9koTrRHusV1wHvCAhHMU02LT5FDGjLcbx5MuU1OblsxhEA2lxXCJ7tnn8AMoJRqLF0WEfA7fGN6evf-rEQ6CZKb04jyf8jXxdzdcQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/20"></div>
+</div>
+<!-- Hero Content Overlay -->
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20 w-full flex flex-col items-start justify-end min-h-[85vh]">
+<div class="max-w-2xl bg-surface/85 backdrop-blur-md p-8 lg:p-12 border border-outline-variant/30">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Autumn / Winter Atelier Release</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4 leading-tight">
+          Wear the Future.<br/><span class="italic font-normal">Naturally.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-lg">
+          Zero-compromise high fashion engineered from closed-loop organic fabrics and biological dyes. Architectural silhouettes tailored with generational artisan precision.
+        </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="px-8 py-3.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors duration-200" href="#catalog">
+            Explore Collection
+          </a>
+<a class="px-8 py-3.5 border border-primary text-primary font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-low transition-colors duration-200" href="#lookbook">
+            View Lookbook
+          </a>
+</div>
+</div>
+</div>
+<!-- Micro-Metrics Bar Docked at Bottom of Hero -->
+<div class="absolute bottom-0 left-0 right-0 z-20 border-t border-outline-variant/30 bg-surface/95 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-outline-variant/30">
+<div class="flex items-center justify-center md:justify-start gap-3 py-1">
+<span class="material-symbols-outlined text-secondary">eco</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">100% Organic &amp; Recycled Fibers</span>
+</div>
+<div class="flex items-center justify-center md:justify-start gap-3 md:pl-6 py-1">
+<span class="material-symbols-outlined text-secondary">water_drop</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Zero Toxic Dyes or Synthetics</span>
+</div>
+<div class="flex items-center justify-center md:justify-start gap-3 md:pl-6 py-1">
+<span class="material-symbols-outlined text-secondary">workspace_premium</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Fair-Wage European Ateliers</span>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       6. FEATURED & SEASONAL COLLECTIONS
+  ========================================================================= -->
+<section class="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="collections">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Seasonal Curation</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Autumn / Winter 2026</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+        Constructed from regenerative wool and heritage flax. Designed for effortless transitions between architectural urban structures and quiet natural retreats.
+      </p>
+</div>
+<!-- Editorial Split Feature -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 items-center">
+<div class="lg:col-span-7 relative group overflow-hidden">
+<div class="aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial close-up fashion photography of a tailored raw linen winter ensemble captured in soft dramatic daylight, showcasing hand-stitched horn buttons, textured woven hemp collar, and crisp minimalist geometry with subtle natural folds and calm neutral tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-uoMutCKcGrESn4efxVKVIqGjuW9Xqx9YL-smJzQ6SlQ4HXvR1oCclxjufwG3ehsDlTRYQEzmPyP13SeYj4ejHDD-7iionV6cAb8a7Pre3APxfs9gTnKPmlZqh63a9uZXD-a9mjvkWIu6DFP-Z3FC7LhVrPgcmEtlnbPeKQ-1-BPHJvD6aaRjS4hzBmj0cTx6P6rK_kadAhv1tckrteqMqKKxs0kkcPA_qqGufTYj8bcAd0peKFslmg"/>
+</div>
+<div class="absolute top-4 left-4 bg-surface px-3 py-1 text-label-sm font-label-sm uppercase tracking-widest border border-outline-variant/30">
+          Limited Run · 250 Pieces
+        </div>
+</div>
+<div class="lg:col-span-5 lg:pl-6 space-y-6">
+<div class="inline-block border-b border-secondary pb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">The Atelier Manifesto</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Sculptural Outerwear Crafted for Decades</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Each piece in our Autumn / Winter collection is numbered by hand in our Milanese workshop. Wool is sourced exclusively from zero-mulesing regenerative sheep farms in Tuscany, blended with Belgian water-retted flax for enduring structural drape.
+        </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-3 font-label-md text-label-md uppercase tracking-wider text-primary group border-b border-primary pb-1" href="#catalog">
+            Discover Collection
+            <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product Showcase Grid (4 Curated Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group flex flex-col" data-product-id="1">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Luxury fashion model wearing an architectural double-breasted sculptural wool overcoat in deep charcoal, standing in a serene natural studio setting, capturing clean structural lapels, unadorned silhouette, and rich organic texture in soft overcast illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmYohJXKTTrxBx4RvWOdZ9bbwIl3VwyGgGPTy51yEUaccpUGiaHspLVYYipibc3-XulPtmpoCdr4SvRMNkwGUbsFEJQFxENIjFqpj3A2kdKkj-ZYyfYkPok2gcEwkS8nWlSKWgFHwtolf5davza7AmKkUisF-W6o8Fsxx-cbTs2459hHYi4XfLETsp8jnSnnnI71c6YqNZry5I_dWZC6Jf0mK9yBhCf97aYcuhNCNjUyG51C6COYrYvQ"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Sculptural Wool Overcoat', 480)">
+              Quick Add
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Sculptural Wool Overcoat</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$480</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">100% Regenerative Tuscan Wool</p>
+<div class="flex items-center gap-1.5 mt-auto">
+<button class="w-3.5 h-3.5 rounded-full bg-[#1c1b1b] border border-outline" title="Charcoal"></button>
+<button class="w-3.5 h-3.5 rounded-full bg-[#d7c3b3] border border-outline" title="Dune"></button>
+<button class="w-3.5 h-3.5 rounded-full bg-[#5a6150] border border-outline" title="Sage"></button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col" data-product-id="2">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial portrait of a minimalist raw indigo denim jacket crafted from heavyweight organic Japanese selvedge denim, displayed with immaculate clean tailoring lines against an ivory museum backdrop under directional natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5YR4pG2xmql8mCDE5uY-dcn4wpDANOTAxFkYh90_Gvpm4I1LyRLq2IK714IQqRD6GQP8i7zcfEe9NWzIk1dWU-xiDUVx14JJwt949p2gbh3Wv64gG7-lN66YfCOGh4kOA9N8kw07k892IW-ASc6XAjg8N0rIJaD4ibvC0CplXel8z09AGIQ3sNinZIEVaao5PtYFAfPjYP_3TcdnvonPzJN4mb79dwD6L-IWGyuThZgtjR26cN2P5lg"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Organic Heavyweight Denim Jacket', 290)">
+              Quick Add
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Organic Raw Denim Jacket</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$290</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">14oz Organic Indigo Selvedge</p>
+<div class="flex items-center gap-1.5 mt-auto">
+<button class="w-3.5 h-3.5 rounded-full bg-[#182338] border border-outline" title="Deep Indigo"></button>
+<button class="w-3.5 h-3.5 rounded-full bg-[#1c1b1b] border border-outline" title="Black Selvedge"></button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col" data-product-id="3">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Fashion studio shot of a high-neck cashmere-blend fine knit turtleneck sweater in soft oat milk ecru, draped on an understated model with gentle warm studio side-lighting emphasizing luxury texture, seam details, and soft drape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4oc4ZN_o8Z-qPoD-YyHPX3mJ4eTlMBxvTlaTs352i9QbMglJQzloU6ctN9_guDNZSk6xxQzkxxsVGD6UkS2K8P-Sb98ThJHSo2rFJp8jSPwKCT0q25Pj0kid2yS_Z8PsbrR5JuNRkGYixV9KOS6VQJhvREDeOT_njkqUWLhzsTbLWs6QHQNQnCiElmzre2qREImkqGwZ9uWO3DjkEXkkZ0x-ObY1C-HQmZdN0X4fJHDT8vCchyCIcMw"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Minimalist Cashmere Turtleneck', 210)">
+              Quick Add
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Cashmere-Blend Turtleneck</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$210</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Recycled Mongolian Cashmere</p>
+<div class="flex items-center gap-1.5 mt-auto">
+<button class="w-3.5 h-3.5 rounded-full bg-[#eae8e4] border border-outline" title="Ecru"></button>
+<button class="w-3.5 h-3.5 rounded-full bg-[#5a6150] border border-outline" title="Sage"></button>
+<button class="w-3.5 h-3.5 rounded-full bg-[#1c1b1b] border border-outline" title="Charcoal"></button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col" data-product-id="4">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial photography capturing tailored hemp-linen pleated trousers in warm sand dune hue, showcasing structured front pleats, clean ankle break, and artisanal horn side cinches against a soft neutral travertine floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByiLQeNfoPPv1fopX0p9EiRveoGRKh20jNe9Ybcn3H1Ka9xNiFc4v_BpQaAvsFhV7I7ED3-yc7IgUGmHBRX3OB8VhWSw4YGY8adF3r9NHrC8oUKm2aSyV1Pmof98ahHxW-0dLcoLmDWdq2tr0P93whWUfQRU4qYp_ItzBghicCaUxvQECwXJfD28-DQLeFIVffB-7dCL1CBR6FMheRULWDxhUJffve4Y9ReISjz-_EBgccJwt4qRh20g"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Tailored Hemp Pleated Trousers', 240)">
+              Quick Add
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Hemp-Linen Pleated Trousers</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$240</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">60% Hemp · 40% Belgian Flax</p>
+<div class="flex items-center gap-1.5 mt-auto">
+<button class="w-3.5 h-3.5 rounded-full bg-[#d7c3b3] border border-outline" title="Clay / Dune"></button>
+<button class="w-3.5 h-3.5 rounded-full bg-[#1c1b1b] border border-outline" title="Charcoal"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       7. SUSTAINABILITY PLEDGE & FABRIC STORY
+  ========================================================================= -->
+<section class="py-24 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-20">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-3">Our Core Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Fashion With a Future</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We reject the false binary between uncompromising aesthetics and ecological stewardship. Every thread is accounted for from soil to closet.
+        </p>
+</div>
+<!-- 4 Pillars Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+<div class="bg-surface p-8 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary-container text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Organic Materials</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Certified GOTS biological cotton, regenerative wool, and pesticide-free European hemp grown without artificial irrigation.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-label-sm font-label-sm uppercase tracking-wider text-secondary">
+            100% Certified Origins
+          </div>
+</div>
+<div class="bg-surface p-8 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary-container text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Ethical Production</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Small batch production runs in Northern Italy and Portugal where masters earn on average 42% above living wages.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-label-sm font-label-sm uppercase tracking-wider text-secondary">
+            Living Wage Verified
+          </div>
+</div>
+<div class="bg-surface p-8 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary-container text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">all_inclusive</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Reduced Waste</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Algorithmic zero-waste pattern-cutting technology ensures 98.4% raw fabric efficiency across all garment templates.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-label-sm font-label-sm uppercase tracking-wider text-secondary">
+            Zero Landfill Guarantee
+          </div>
+</div>
+<div class="bg-surface p-8 border border-outline-variant/30 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary-container text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">package_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Responsible Packaging</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              100% home-compostable cornstarch garment sleeves, FSC-certified unbleached cartons, and non-toxic water-activated gum tape.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-label-sm font-label-sm uppercase tracking-wider text-secondary">
+            Plastic-Free Delivery
+          </div>
+</div>
+</div>
+<!-- Interactive Fabric Showcase -->
+<div class="bg-surface p-8 lg:p-12 border border-outline-variant/30">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Tactile Innovation</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Our Material Library</h3>
+</div>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary hover:text-secondary inline-flex items-center gap-2" href="#craft">
+            Read Sourcing Charter <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+<div class="p-4 bg-surface-container-low border border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">01 · Fiber</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1 mb-2">European Flax Linen</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Naturally water-retted in Normandy with zero irrigation requirement.</p>
+<div class="text-label-sm font-label-sm text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> -85% Carbon vs Silk
+            </div>
+</div>
+<div class="p-4 bg-surface-container-low border border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">02 · Fiber</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1 mb-2">Organic Heavy Hemp</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Deep taproot crop replenishing soil nutrients while sequestering carbon.</p>
+<div class="text-label-sm font-label-sm text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> -70% Water vs Conventional
+            </div>
+</div>
+<div class="p-4 bg-surface-container-low border border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">03 · Fiber</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1 mb-2">Tuscan Wool</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Ethically sheared from rotational grazed pastures in Tuscany.</p>
+<div class="text-label-sm font-label-sm text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 100% Biodegradable
+            </div>
+</div>
+<div class="p-4 bg-surface-container-low border border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">04 · Fiber</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1 mb-2">Regenerated Cashmere</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Mechanical sorting of post-industrial cashmere fibers without dye usage.</p>
+<div class="text-label-sm font-label-sm text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Zero Water Depletion
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       8. DEDICATED COLLECTIONS CATALOG
+  ========================================================================= -->
+<section class="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="catalog">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Curated Wardrobe</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">The Complete Catalog</h2>
+</div>
+<div class="flex items-center gap-4 mt-4 md:mt-0">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant" for="catalog-sort">Sort By:</label>
+<select class="bg-surface border border-outline-variant/50 text-label-sm font-label-sm uppercase py-2 px-3 focus:ring-0 focus:border-primary" id="catalog-sort" onchange="handleSortChange(this.value)">
+<option value="featured">Featured Order</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Interactive Category Filter Tabs -->
+<div class="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-6 mb-8 border-b border-outline-variant/20">
+<button class="catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-primary text-on-primary" onclick="filterCatalog('all', this)">All (8)</button>
+<button class="catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-surface hover:bg-surface-container text-on-surface-variant" onclick="filterCatalog('outerwear', this)">Outerwear</button>
+<button class="catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-surface hover:bg-surface-container text-on-surface-variant" onclick="filterCatalog('tops', this)">Tops &amp; Knitwear</button>
+<button class="catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-surface hover:bg-surface-container text-on-surface-variant" onclick="filterCatalog('bottoms', this)">Bottoms</button>
+<button class="catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-surface hover:bg-surface-container text-on-surface-variant" onclick="filterCatalog('essentials', this)">Essentials</button>
+</div>
+<!-- 8-Item Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="catalog-grid">
+<!-- Catalog Item 1 -->
+<div class="catalog-item group flex flex-col" data-category="outerwear" data-price="480">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial portrait of a model modeling an architectural heavy wool trench coat in soft sand beige, exhibiting clean notched collar, deep storm flap, and horn buckle details in a minimal contemporary white studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcNTBe4kFBzuomYQ94334hlVh5F8nYt-aYCv2pNPdo90QhUuOzmPQWVYmNOLPl1EcAo5gy2_Hev0vRQ81R7E73q1xe12pc0bSiJ0EvPF-2Egixkj9x3QO2NT2aXvO0MP0UZj6uKIRkuw_qZ0HcV6I4KxNaMaJ9Kv6YM3qZQHlAg3VO2pB0eH5aL7kvnSt_uloWpFseEvhld_I7EqwyPsghFKOSq8HUNe84DDh-fEeoagg-LiiHQntG9A"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Architectural Trench Coat', 480)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Architectural Trench Coat</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$480</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Outerwear · Dense Organic Cotton</p>
+</div>
+<!-- Catalog Item 2 -->
+<div class="catalog-item group flex flex-col" data-category="outerwear" data-price="340">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Minimalist menswear editorial showing a tailored chore jacket crafted from unbleached heavy flax canvas with oversized patch pockets, captured in clean light with crisp shadow definitions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMAd0Pl0ysm4IJ6Fitxrj8_7ReY3S0b_NsumQGo7O9ANJ2wNjTi-eaiwxYNA9zPDCY0Z0USH-7wcx4PT2KVcd8rHxPWEluPPTMMU6U045cGT8fyAha0xQrZGziR9YD7swt_OhDCaXcssgB_HlDvitcEY37vfTB1iwyWn1xhjfBuTjmCOWVEFummL-491XabsOJoXqUGIGoQaayjo5ezNdF332vSWYvlUQ_kqP6lnbdUDxMTx_noJGH7Q"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Atelier Flax Chore Jacket', 340)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Atelier Flax Chore Jacket</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$340</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Outerwear · 100% Belgian Flax</p>
+</div>
+<!-- Catalog Item 3 -->
+<div class="catalog-item group flex flex-col" data-category="tops" data-price="180">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Studio fashion shot of an oversized organic waffle-knit crewneck in muted olive sage hue, featuring dropped shoulders and clean ribbed cuffs against a serene warm stone background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkSDCwD-cPiVHcYYQeBGHkkjvr3gRC6vpjd_GSReiAY71K_SheMftrAJ3sradd4jw9QoWm4jbOQxt6BqdfslJ_cynNbTiU1ly722Pr301kNZIJExAcFKosCc3BGH2mJ3HK1sCQQ3nU4USVoRwSJzdBnMXPbqq6LmhYkcglnQozf98C4vRVcGs-i480vFtAcKpIGfTU6fobA2sKJG-2VsF8Eu8IY8Yb0P-ijdRhdn6DT7YWGrGiNta9CQ"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Textured Waffle Crewneck', 180)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Textured Waffle Crewneck</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$180</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tops · Biological Cotton</p>
+</div>
+<!-- Catalog Item 4 -->
+<div class="catalog-item group flex flex-col" data-category="tops" data-price="210">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial close up portrait of an elegant model wearing a featherlight raw silk and organic hemp mock-neck knit top in charcoal black, highlighting exquisite fiber drape and subtle ribbing in soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhaDWXFJGuE9QjKQK9R1GE3MwCfZm1aQ6EsZgaJks5cs7JxsF58p4FFCnbpkGvseTjvlfvawiQXScol5NXgn66O-dkQYLCZUxiHZdRq4CQhs0_5aOhHzRQBo4IFIEJanm0q79QLaGISLq8BHgoc_6bZKghxzzAR3RqeYF8JVTlpbeB3-dST1GZ17WXDTNu4x5SeXsgxXPJllyLerdJPKsWERffQk1sPXJfrzlCTUskhEqJ7Y7Td2_8wg"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Raw Silk Mock-Neck Knit', 210)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Raw Silk Mock-Neck Knit</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$210</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tops · Silk &amp; Hemp Blend</p>
+</div>
+<!-- Catalog Item 5 -->
+<div class="catalog-item group flex flex-col" data-category="bottoms" data-price="240">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Luxury fashion shot of structured high-rise wide leg trousers in deep espresso brown hemp canvas, paired with understated leather sandals in an architectural museum courtyard setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhtYRHPwoH7cM67UcXaGHMQhOtMnF223P4qtxVtGSTSRbXP-ZvyGiqWwgmSwQB5fxYqjSxFaPmtBlhUpu91Xl7gUQBPzLH7S5tvBMJljkfchX8lGOqGmnFDj1QM6Ax8ROMqUF66jtvGUWwE9kcJJzTN20wDf2xyd6xgnxjxZG5UAsjMo3vjz50hRMB72hRnR6J6kNmzmHKHUQ-W8ea2XkHqYoPMqMFdp3nnZsei0B88b15iX0b0Lbpdg"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Structured Wide-Leg Trouser', 240)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Structured Wide-Leg Trouser</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$240</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bottoms · Heavy Hemp Canvas</p>
+</div>
+<!-- Catalog Item 6 -->
+<div class="catalog-item group flex flex-col" data-category="bottoms" data-price="260">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Crisp studio catalog picture of tapered cropped wool trousers in heather grey, highlighting inverted front pleats and horn waist buttons on an unadorned pedestal with serene lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGsnLrxbMarxV4iDU7IHQ791uEeUqixZ4tZQB_FjvyqMZXF-1Q6aqXgI8cj-6Os9BP-hR_zumkrvY65r8BOquf1RJm8IilFC95wt07cV3nHhLn9WN1pYNJc8N67dKJVKWydic9It1rjf6eXdAeGrURiwrcGh0alnm-MXs8kojft89C6ACsJOJeXeUhYvHsmiPiiEpOoFFG6kfD3pjEiojUPZPp5VkY7dgBeA1LEdUCg797hvVxVJ1ZQw"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Tapered Pleated Wool Pant', 260)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Tapered Pleated Wool Pant</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$260</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bottoms · Regenerative Fine Wool</p>
+</div>
+<!-- Catalog Item 7 -->
+<div class="catalog-item group flex flex-col" data-category="essentials" data-price="95">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial product photograph of a pristine heavyweight organic cotton tee in chalk white, folded cleanly with artisanal thread tag on a light oak table in bright morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz211PWdP9EB3Sg7-hUuv4drcFLwSQVF4RwEtFFOJED_p7YMiIlELUTyR68Hlj11tjHrqbm_rqvHG-SEHdw4qXwTDXmGo2yDwP0oiPLJvl2gY_9qwUqi4OygzBwhFltDIHOc8pDNbHYD5RmCj53YMrmLyJB71SXvC6pRsGSsAYsVVyfD8BDI9HMSB7zku0Rn4CaJUNNbnzPgEKdZJZWnsg_pkYHMzYfc3Omj5sqJtKrlX0239DgAv9Yg"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Heavyweight Organic Tee', 95)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Heavyweight Organic Tee</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$95</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Essentials · 260gsm GOTS Cotton</p>
+</div>
+<!-- Catalog Item 8 -->
+<div class="catalog-item group flex flex-col" data-category="essentials" data-price="130">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden border border-outline-variant/30 mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial look of an oversized textured organic waffle robe-scarf wrapped effortlessly around a model standing against an ochre lime-wash wall, showing tactile woven fringe and earth pigment tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj2bds8_YWdszb9IUuDteimuwDg712rIxYHvF5kUbV5R3VUL0wYzqBm_iCAtg6awpmZ-9k9F25PnnwjjayoVgbukcrKw_skuJMSHFub_BjNKy-wQv9XsIyljutBXkOiI6wsAu0vTvMaWn_2jI-l7F-RNJb67BYQBHxflHOBWGhEIQrnW_Pv-XNLwd69OspJrRvRZ975hoV5ApL3RlE2x6c3BZqm7PpyWwMegmdtMw454ziewSxmW0stw"/>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 p-2 bg-surface/80 backdrop-blur-sm text-primary hover:text-error transition-colors" onclick="toggleWishlist(this)">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">
+<button class="flex-1 py-2.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors text-center" onclick="quickAdd('Handwoven Linen Wrap Scarf', 130)">
+              Add to Bag
+            </button>
+</div>
+</div>
+<div class="flex items-start justify-between mb-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Handwoven Linen Wrap Scarf</h4>
+<span class="font-body-md text-body-md text-primary font-semibold">$130</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Essentials · Pure Artisan Linen</p>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       9. INTERACTIVE EDITORIAL LOOKBOOK
+  ========================================================================= -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant/30" id="lookbook">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Visual Narrative</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Editorial Lookbook 2026</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+          Click any frame to inspect tailoring nuances, fabric composition notes, and runway styling references.
+        </p>
+</div>
+<!-- Masonry Editorial Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Large Left Feature (Theme 1) -->
+<div class="md:col-span-7 group cursor-pointer" onclick="openLightbox(0)">
+<div class="aspect-[4/5] bg-surface overflow-hidden border border-outline-variant/30 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial lookbook frame titled Urban Minimalism featuring two fashion models in architectural monochromatic black and ivory sustainable linen outerwear standing amidst brutalist concrete pillars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBrh73P610guLclWxkbn0w3ISbI-tHfk4wXloZG5feD3QeGEihbxaGSyeKnvc-4H2ZloGFUeXFW-2pfT4W7tq0BREszxETt45IUHk5xwaP9SuBbO6tCSyK7ESGVXPoD2sgKxT8PNEh-zXex3GTFGJ_sbIRQoFr2y4oEJxKaruAhRNU3BMs6z3uSDi_OzFx68IIb4yteB9RMsA50bCVvs94DgCIcskUnVqeJyE7aR4r-MaKzai0gih7hA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 text-white flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed block mb-1">Theme 01</span>
+<h4 class="font-headline-md text-headline-md text-white">Urban Minimalism</h4>
+</div>
+<span class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity">fullscreen</span>
+</div>
+</div>
+</div>
+<!-- Right Stack (Themes 2 & 3) -->
+<div class="md:col-span-5 space-y-8">
+<div class="group cursor-pointer" onclick="openLightbox(1)">
+<div class="aspect-[4/3] bg-surface overflow-hidden border border-outline-variant/30 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High fashion outdoor editorial titled Earth and Form featuring a model in layered sage hemp robes against raw golden sandstone cliffs bathed in afternoon sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGz60pVfZPbTytN0aAIeywILGPRtO3x0hV38uSMq9Bi-QsO-ExfAUffYtoiUEmRKUOgdVOReI6KoiVgoARCgPdXOrKXT0lGlxvNf-veF6RJ5SeGrFUPNCRvi_LDBHlZYcj0vJhdcUMvhs0ARXi_9YBe0d6oY93Nnqi2NVFpCetnusC4JpdhmNa0YPfXBwgegiILRZWxVlCRhbUbMyegw7577D3wAwYGzc-Uxb0otiwZ1NT8YJ1rgsKTA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 text-white flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed block mb-1">Theme 02</span>
+<h4 class="font-headline-sm text-headline-sm text-white">Earth &amp; Form</h4>
+</div>
+<span class="material-symbols-outlined text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity">fullscreen</span>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer" onclick="openLightbox(2)">
+<div class="aspect-[4/3] bg-surface overflow-hidden border border-outline-variant/30 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Warm atmospheric editorial portrait titled Autumn Layers featuring tailored wool coats layered over textured cashmere knits in a peaceful forest setting with golden leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQfgKrz43d_0j7wOXNewv3KDOyUKk5FokzHiNcxsyCH7Q028Lc9epAyizVS2zA0i_8KegAb8_IdNH3yppfRe7MZdH8C_wLf1Us4qtVm8djsWStDSLhUHuTnPZiMrj7zjPfzdCQb_DxudBJOliaeHQfk7vZmj8h1PsTc4QOzCqO9qdcUfXBPbrDoIjCYSZAwW-y_M5pjZkcMvt_3Otb4ThdDy_OirDbTapsPKbZf0FdC2ZSmIIhNa2t8Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 right-6 text-white flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed block mb-1">Theme 03</span>
+<h4 class="font-headline-sm text-headline-sm text-white">Autumn Layers</h4>
+</div>
+<span class="material-symbols-outlined text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       10. "OUR CRAFT" STORYTELLING & VALUE CHAIN
+  ========================================================================= -->
+<section class="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="craft">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">Atelier Heritage</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Elegance Without Exploitation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Fast fashion made garments disposable; LUMORA treats each silhouette as an architectural heirloom. We bridge heritage tailoring traditions with closed-loop bio-engineering to prove that luxury thrives when nature is respected.
+        </p>
+<div class="p-6 bg-surface-container-low border-l-2 border-primary">
+<p class="font-headline-sm text-headline-sm italic text-primary mb-2">"True sophistication does not borrow from tomorrow to dress today."</p>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">— Elena Vance, Creative Director</span>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Intimate artisan craft photography inside a sunlit European tailoring atelier, displaying aged brass shears, tailor chalk lines on heavy unbleached linen fabric, and wooden thread spools on an antique workbench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgRf1ZAmWPjaIignToEoFeeuLrLb0__mJjIeKu0k6BDfbpgLXy7F2BTbuye72bikICWT1La3cdfR2nNCQ4iGPWqSX91nvHXSJY1RXl4vwIANbL-TPmKbFjCD-RRmc31jFUgKAOu3qLa7fZZ6ifmskGlbO-2vAtSi1aw7p8cXd7NZUDwJj1nnhQtu85Ld1kwDbRYohqOkk4ucV4BKode1Vkk3WVTDGilWnxi5dFZJ3hs_OEfRDGS9xPyA"/>
+</div>
+</div>
+</div>
+<!-- 6-Step Visual Timeline of Value Chain -->
+<div class="border-t border-outline-variant/30 pt-16">
+<div class="text-center max-w-xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Radical Transparency</span>
+<h3 class="font-headline-md text-headline-md text-primary">Our 6-Step Circular Value Chain</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
+<div class="p-5 bg-surface border border-outline-variant/30 relative">
+<span class="font-headline-sm text-headline-sm text-outline-variant block mb-2">01</span>
+<h4 class="font-title-md text-title-md text-primary mb-1">Material Sourcing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Regenerative crops and organic fibers grown without synthetic pesticides.</p>
+</div>
+<div class="p-5 bg-surface border border-outline-variant/30 relative">
+<span class="font-headline-sm text-headline-sm text-outline-variant block mb-2">02</span>
+<h4 class="font-title-md text-title-md text-primary mb-1">Pattern Design</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Algorithmic zero-waste nesting maximizing fabric yield to 98%.</p>
+</div>
+<div class="p-5 bg-surface border border-outline-variant/30 relative">
+<span class="font-headline-sm text-headline-sm text-outline-variant block mb-2">03</span>
+<h4 class="font-title-md text-title-md text-primary mb-1">Ethical Atelier</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Assembled by salaried master tailors in Italy and Portugal.</p>
+</div>
+<div class="p-5 bg-surface border border-outline-variant/30 relative">
+<span class="font-headline-sm text-headline-sm text-outline-variant block mb-2">04</span>
+<h4 class="font-title-md text-title-md text-primary mb-1">Rigorous QC</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tensile and seam stress tests guaranteeing 10-year durability.</p>
+</div>
+<div class="p-5 bg-surface border border-outline-variant/30 relative">
+<span class="font-headline-sm text-headline-sm text-outline-variant block mb-2">05</span>
+<h4 class="font-title-md text-title-md text-primary mb-1">Zero Plastic</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Home-compostable cassava bags and unbleached FSC cardboard.</p>
+</div>
+<div class="p-5 bg-surface border border-outline-variant/30 relative">
+<span class="font-headline-sm text-headline-sm text-outline-variant block mb-2">06</span>
+<h4 class="font-title-md text-title-md text-primary mb-1">Lifetime Care</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Free repair program and circular buy-back takeback credits.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       11. STORE LOCATOR
+  ========================================================================= -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant/30" id="stores">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Physical Sanctuaries</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Atelier Store Locator</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+          Visit our minimalist sanctuaries designed with reclaimed timber, clay plaster, and ambient acoustic dampening.
+        </p>
+</div>
+<!-- City Selector Tabs -->
+<div class="flex flex-wrap gap-3 mb-10">
+<button class="store-city-btn px-6 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider" onclick="showCityStore('soho', this)">New York (SoHo)</button>
+<button class="store-city-btn px-6 py-2.5 bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider border border-outline-variant/30" onclick="showCityStore('paris', this)">Paris (Le Marais)</button>
+<button class="store-city-btn px-6 py-2.5 bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider border border-outline-variant/30" onclick="showCityStore('tokyo', this)">Tokyo (Ginza)</button>
+<button class="store-city-btn px-6 py-2.5 bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider border border-outline-variant/30" onclick="showCityStore('london', this)">London (Mayfair)</button>
+</div>
+<!-- Store Card Display Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-surface p-8 lg:p-12 border border-outline-variant/30">
+<div class="lg:col-span-7">
+<div class="aspect-[16/10] bg-surface-container overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Interior architectural photograph of LUMORA flagship retail atelier in SoHo New York with polished limestone floors, minimalist brushed blackened brass clothing rails displaying unbleached linen garments, and large airy industrial loft windows." id="store-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt9RnFxHDEM3ZWZHRyJd8-CuO20SrNulYK1dClVD3FVtPlAszrcnCQwBvJ-92vU2L5BGy3Or0kMay98y6E9nOQu3rrVydFkOHaMKO1RWO2XVUSQiFnWNxycjI5zEgyWAkszK7TbWB7Cv0IWC1FAEMt53p8Lbky7vkp8suFc6V3NKJSAEIRg2H45ojhJFTZQdfXURZemegMG7aYvEneXQwTWWK5G0hHX4uikWpcCU2Bl7vBWZcrIj1DqQ"/>
+</div>
+</div>
+<div class="lg:col-span-5 lg:pl-4 space-y-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1" id="store-badge">Flagship Atelier</span>
+<h3 class="font-headline-md text-headline-md text-primary" id="store-title">New York · SoHo</h3>
+</div>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lg text-secondary">location_on</span>
+<span id="store-address">428 Broome Street, New York, NY 10013</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lg text-secondary">schedule</span>
+<span id="store-hours">Monday – Saturday: 11:00 AM – 7:00 PM<br/>Sunday: 12:00 PM – 6:00 PM</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lg text-secondary">call</span>
+<span id="store-phone">+1 (212) 555-0182</span>
+</div>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row gap-4">
+<button class="px-6 py-3 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors text-center" onclick="showToast('Private appointment requested. Concierge will contact you within 2 hours.')">
+              Book Private Fitting
+            </button>
+<button class="px-6 py-3 border border-primary text-primary font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-low transition-colors text-center" onclick="showToast('Opening directions in maps...')">
+              Get Directions
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       12. CONTACT SUITE & CONCIERGE
+  ========================================================================= -->
+<section class="py-24 max-w-7xl mx-auto px-6 lg:px-12" id="contact">
+<div class="text-center max-w-xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Direct Inquiry</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Atelier Concierge</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+        Reach our private client advisors for bespoke garment inquiries, sizing consultations, and corporate sustainability partnerships.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Concierge Details -->
+<div class="lg:col-span-5 space-y-8 bg-surface-container-low p-8 lg:p-10 border border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Client Advisory Services</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Our atelier concierge team operates seven days a week to ensure every interaction reflects the intentionality of our clothing.
+          </p>
+</div>
+<div class="space-y-4 pt-4 border-t border-outline-variant/30">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface flex items-center justify-center border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block">Email Advisory</span>
+<a class="font-body-md text-body-md text-primary hover:underline" href="mailto:concierge@lumora.atelier">concierge@lumora.atelier</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface flex items-center justify-center border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary">phone_iphone</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block">Dedicated Direct Line</span>
+<span class="font-body-md text-body-md text-primary">+1 (800) 840-LUMORA</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface flex items-center justify-center border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block">Advisory Hours</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">08:00 – 20:00 CET (Monday – Saturday)</span>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary block mb-3">Verified Social Channels</span>
+<div class="flex gap-4 text-primary">
+<a class="hover:text-secondary text-sm tracking-wider uppercase font-label-sm" href="#">Instagram</a>
+<span>·</span>
+<a class="hover:text-secondary text-sm tracking-wider uppercase font-label-sm" href="#">Pinterest</a>
+<span>·</span>
+<a class="hover:text-secondary text-sm tracking-wider uppercase font-label-sm" href="#">TikTok</a>
+<span>·</span>
+<a class="hover:text-secondary text-sm tracking-wider uppercase font-label-sm" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+<!-- Validated Contact Form -->
+<div class="lg:col-span-7 bg-surface p-8 lg:p-10 border border-outline-variant/30">
+<form class="space-y-6" id="contact-form" novalidate="" onsubmit="handleContactSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface mb-2" for="name">Full Name *</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 p-3 text-body-md text-on-surface focus:border-primary focus:ring-0" id="name" placeholder="Elena Rostova" required="" type="text"/>
+<span class="text-error font-label-sm text-label-sm mt-1 hidden" id="name-error">Please provide your name.</span>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface mb-2" for="email">Email Address *</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 p-3 text-body-md text-on-surface focus:border-primary focus:ring-0" id="email" placeholder="elena@example.com" required="" type="email"/>
+<span class="text-error font-label-sm text-label-sm mt-1 hidden" id="email-error">Please provide a valid email.</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface mb-2" for="phone">Phone Number</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 p-3 text-body-md text-on-surface focus:border-primary focus:ring-0" id="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface mb-2" for="subject">Inquiry Focus *</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/50 p-3 text-body-md text-on-surface focus:border-primary focus:ring-0" id="subject" required="">
+<option value="sizing">Bespoke Sizing &amp; Fit Consultation</option>
+<option value="materials">Material Sourcing &amp; Transparency</option>
+<option value="private-appointment">Private Showroom Appointment</option>
+<option value="press">Press &amp; Architectural Collaborations</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface mb-2" for="message">Message *</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/50 p-3 text-body-md text-on-surface focus:border-primary focus:ring-0" id="message" placeholder="Please describe your styling requirements or questions..." required="" rows="4"></textarea>
+<span class="text-error font-label-sm text-label-sm mt-1 hidden" id="message-error">Please write a brief note.</span>
+</div>
+<div class="pt-2">
+<button class="w-full sm:w-auto px-8 py-3.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors" type="submit">
+              Send Concierge Inquiry
+            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       13. NEWSLETTER / CIRCLE
+  ========================================================================= -->
+<section class="py-20 bg-surface-container border-y border-outline-variant/30">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-2">Inner Sanctum</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Join the LUMORA Circle</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-8">
+        Receive quarterly print lookbook previews, private atelier invitations, and transparent disclosures on all ongoing material research.
+      </p>
+<form class="flex flex-col sm:flex-row max-w-md mx-auto gap-2" id="newsletter-form" onsubmit="handleNewsletter(event)">
+<input class="flex-1 bg-surface border border-outline-variant/60 px-4 py-3 text-body-md focus:border-primary focus:ring-0" id="nl-email" placeholder="Enter your email address" required="" type="email"/>
+<button class="px-6 py-3 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors whitespace-nowrap" type="submit">
+          Subscribe
+        </button>
+</form>
+</div>
+</section>
+<!-- =========================================================================
+       14. EDITORIAL FOOTER (Shared Component Implementation)
+  ========================================================================= -->
+<footer class="bg-surface-container-low text-primary border-t border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+<!-- Brand Column -->
+<div class="lg:col-span-2 space-y-4">
+<span class="text-headline-md font-headline-md tracking-tight uppercase text-primary">LUMORA</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+            Conscious luxury tailored for enduring elegance. Designed between Milan and Paris, crafted responsibly throughout Europe.
+          </p>
+<div class="pt-2 text-label-sm font-label-sm uppercase tracking-widest text-secondary">
+            B-Corp Certified Atelier Candidate
+          </div>
+</div>
+<!-- Col 2: Navigation Links (from JSON) -->
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Collections &amp; Craft</h4>
+<ul class="space-y-2 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#collections">Collections</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#lookbook">Lookbook</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#craft">Our Craft</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#craft">Sustainability Charter</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#stores">Store Locator</a></li>
+</ul>
+</div>
+<!-- Col 3: Client Care -->
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Client Care</h4>
+<ul class="space-y-2 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+<li><button class="hover:text-secondary transition-colors uppercase" onclick="toggleSizeGuide(true)">Size Guide</button></li>
+<li><a class="hover:text-secondary transition-colors" href="#contact">Private Styling</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#contact">Lifetime Repair</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#contact">Order Tracking</a></li>
+</ul>
+</div>
+<!-- Col 4: Legal & Architecture -->
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Governance</h4>
+<ul class="space-y-2 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Supplier Audit 2025</a></li>
+<li><a class="hover:text-secondary transition-colors" href="#">Carbon Disclosure</a></li>
+</ul>
+</div>
+</div>
+<!-- Developer Portfolio Showcase Credit (Item 12 Requirement) -->
+<div class="py-6 my-8 border-y border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 bg-surface px-6">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">
+            Designed &amp; Developed by Senior Creative Technologist
+          </span>
+</div>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-primary hover:text-secondary underline underline-offset-4 flex items-center gap-1.5" onclick="openDevModal()">
+          Explore Developer Portfolio <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<!-- Copyright & Bottom Links (Exact JSON string) -->
+<div class="flex flex-col md:flex-row justify-between items-center text-body-sm font-body-sm text-on-surface-variant gap-4">
+<p>© 2025 LUMORA Atelier. All rights reserved. Conscious luxury for enduring elegance.</p>
+<div class="flex space-x-6 text-label-sm font-label-sm uppercase tracking-widest">
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">Pinterest</a>
+<a class="hover:text-primary" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- =========================================================================
+       15. INTERACTIVE SIZE GUIDE MODAL
+  ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="size-modal">
+<div class="bg-surface w-full max-w-2xl border border-outline-variant/40 shadow-2xl p-6 lg:p-8 max-h-[90vh] overflow-y-auto">
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">Atelier Sizing Guide</span>
+<h3 class="font-headline-md text-headline-md text-primary">Standard Measurements</h3>
+</div>
+<button aria-label="Close modal" class="text-primary hover:text-secondary p-1" onclick="toggleSizeGuide(false)">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<!-- Unit Switcher -->
+<div class="flex justify-end my-4">
+<div class="inline-flex border border-outline-variant/40 p-0.5">
+<button class="px-3 py-1 text-label-sm font-label-sm uppercase bg-primary text-on-primary" id="unit-in" onclick="setSizeUnit('in')">Inches</button>
+<button class="px-3 py-1 text-label-sm font-label-sm uppercase bg-surface text-on-surface-variant" id="unit-cm" onclick="setSizeUnit('cm')">Centimeters</button>
+</div>
+</div>
+<!-- Size Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/40 font-label-sm text-label-sm uppercase tracking-wider text-on-surface">
+<th class="py-3 px-3">Size</th>
+<th class="py-3 px-3">Chest</th>
+<th class="py-3 px-3">Waist</th>
+<th class="py-3 px-3">Hip</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20" id="size-tbody">
+<!-- Populated via JS -->
+</tbody>
+</table>
+</div>
+<!-- How to measure note -->
+<div class="mt-6 p-4 bg-surface-container-low border border-outline-variant/30 space-y-2">
+<h4 class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">How to Measure</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><strong>Chest:</strong> Measure around the fullest part of your chest, keeping tape horizontal.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><strong>Waist:</strong> Measure around your natural waistline, keeping tape comfortably loose.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><strong>Hips:</strong> Measure around fullest part of hips, approximately 8 inches below waist.</p>
+</div>
+<div class="mt-6 text-center">
+<button class="px-6 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors" onclick="toggleSizeGuide(false)">
+          Return to Atelier
+        </button>
+</div>
+</div>
+</div>
+<!-- =========================================================================
+       16. LOOKBOOK LIGHTBOX MODAL
+  ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex flex-col justify-between p-6" id="lightbox-modal">
+<div class="flex justify-between items-center text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed" id="lb-counter">Frame 1 of 3</span>
+<button aria-label="Close Lightbox" class="text-white hover:text-secondary p-2" onclick="closeLightbox()">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<div class="flex-1 flex items-center justify-center my-4 relative">
+<button aria-label="Previous image" class="absolute left-2 text-white/80 hover:text-white p-3" onclick="changeLightbox(-1)">
+<span class="material-symbols-outlined text-4xl">chevron_left</span>
+</button>
+<div class="max-w-4xl max-h-[70vh] flex flex-col items-center">
+<img class="max-h-[60vh] object-contain" data-alt="High resolution fashion lookbook slide showing tailored garment in pristine architectural daylight." id="lb-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2-RFtRyzk7uh474GrkWu9r0RJU5p1Y18uOHD1Y6li7xo8FUPj3wsg3pS6kDvnc8oHTANvEUUENq-0EZhjZZEBMA3xE_oHHNlQaPTSHh1LUA1ERAhsrR6CQrf2QX9r3ub_H4XM_gxZ8I-sMMC7UylnOyf0AtXIL3KYo4wlaT0nvC0y7ymJ4EQ7blfI6_BgXMar4Q6jYF1RMix-2_oOX9fBgH8jchO5KAEFQ5SQTTPvBiuSqvjTFRy_zA"/>
+<div class="text-center text-white mt-4">
+<h4 class="font-headline-sm text-headline-sm" id="lb-title">Lookbook Narrative</h4>
+<p class="font-body-sm text-body-sm text-gray-300 max-w-lg mt-1" id="lb-desc">Detailed garment analysis and seasonal tailoring manifesto.</p>
+</div>
+</div>
+<button aria-label="Next image" class="absolute right-2 text-white/80 hover:text-white p-3" onclick="changeLightbox(1)">
+<span class="material-symbols-outlined text-4xl">chevron_right</span>
+</button>
+</div>
+<div class="text-center text-white/60 font-label-sm text-label-sm uppercase tracking-widest pb-2">
+      Press ESC or click close to return
+    </div>
+</div>
+<!-- =========================================================================
+       17. SEARCH MODAL
+  ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-surface/95 backdrop-blur-md hidden flex flex-col p-6 lg:p-12" id="search-modal">
+<div class="max-w-4xl mx-auto w-full flex justify-between items-center pb-6 border-b border-outline-variant/30">
+<span class="text-headline-md font-headline-md tracking-tight uppercase text-primary">Search Atelier</span>
+<button aria-label="Close search" class="text-primary hover:text-secondary p-2" onclick="toggleSearchModal()">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<div class="max-w-4xl mx-auto w-full my-8">
+<div class="relative">
+<input class="w-full bg-transparent border-b-2 border-primary py-4 px-2 font-headline-sm text-headline-sm text-primary placeholder:text-outline-variant focus:outline-none focus:ring-0" id="search-input" oninput="liveSearch(this.value)" placeholder="Search trench coats, selvedge denim, cashmere, flax linen..." type="text"/>
+<span class="material-symbols-outlined absolute right-2 top-4 text-3xl text-primary">search</span>
+</div>
+<div class="mt-8">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-3">Suggested Searches</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-1.5 bg-surface-container-low border border-outline-variant/40 text-label-sm font-label-sm uppercase" onclick="fillSearch('Wool Overcoat')">Wool Overcoat</button>
+<button class="px-4 py-1.5 bg-surface-container-low border border-outline-variant/40 text-label-sm font-label-sm uppercase" onclick="fillSearch('Organic Denim')">Organic Denim</button>
+<button class="px-4 py-1.5 bg-surface-container-low border border-outline-variant/40 text-label-sm font-label-sm uppercase" onclick="fillSearch('Belgian Flax')">Belgian Flax</button>
+<button class="px-4 py-1.5 bg-surface-container-low border border-outline-variant/40 text-label-sm font-label-sm uppercase" onclick="fillSearch('Mongolian Cashmere')">Cashmere</button>
+</div>
+</div>
+<div class="mt-8 divide-y divide-outline-variant/30" id="search-results">
+<!-- Results injected dynamically -->
+</div>
+</div>
+</div>
+<!-- =========================================================================
+       18. CART DRAWER
+  ========================================================================= -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden transition-opacity duration-300" id="cart-drawer-backdrop" onclick="toggleCartDrawer(false)"></div>
+<aside class="fixed top-0 right-0 h-full w-96 max-w-[90vw] z-50 bg-surface border-l border-outline-variant/30 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between" id="cart-drawer">
+<div class="p-6 border-b border-outline-variant/30 flex justify-between items-center">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Your Wardrobe</h3>
+<span class="font-body-sm text-body-sm text-secondary">Free carbon-neutral shipping applied</span>
+</div>
+<button aria-label="Close cart" class="text-primary hover:text-secondary" onclick="toggleCartDrawer(false)">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<!-- Cart items list -->
+<div class="p-6 flex-1 overflow-y-auto space-y-6" id="cart-items">
+<div class="flex gap-4 border-b border-outline-variant/20 pb-4">
+<div class="w-16 h-20 bg-surface-container shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail preview of sculptural wool overcoat in charcoal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt5JCizA20_BcglQYwDKBm0qUJqx8aXymJj6oBgjfnoNtXmgyQJXuSEk2F16wBd03LnYMoUqoZCt8V5Ms3_4X7wAtO2XyD5qoxGZuYv_L-6OjbrlxUiV1x5CakCJLpXJuXXX2WSc__dhy_XhxGyWpY1iJ1l_mWldOGRMzzwVkY5HjMA1TacVCshdWgSBTnLelo1Jef0DkOgu5xGjKdTSSD-kVRNBXtGjHdU1bssLLWAY0ya9EhKm56zw"/>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md text-body-md text-primary font-medium">Sculptural Wool Overcoat</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Size M · Charcoal</span>
+<div class="flex justify-between items-center mt-2">
+<span class="font-body-md text-body-md font-semibold text-primary">$480</span>
+<button class="text-label-sm font-label-sm uppercase text-secondary hover:text-error" onclick="removeItem(this, 480)">Remove</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Summary footer -->
+<div class="p-6 border-t border-outline-variant/30 space-y-4 bg-surface-container-low">
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span class="font-semibold text-primary" id="cart-subtotal">$480.00</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+<span>Worldwide Shipping</span>
+<span>Complimentary</span>
+</div>
+<button class="w-full py-3.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors text-center" onclick="showToast('Initiating secure encrypted checkout...')">
+        Proceed to Checkout
+      </button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant tracking-wider">
+        30-Day Atelier Returns · Lifetime Garment Warranty
+      </p>
+</div>
+</aside>
+<!-- =========================================================================
+       19. DEVELOPER PORTFOLIO SHOWCASE MODAL (Item 12 Requirement)
+  ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="dev-modal">
+<div class="bg-surface w-full max-w-xl border border-outline-variant/40 shadow-2xl p-8">
+<div class="flex justify-between items-start pb-4 border-b border-outline-variant/30">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">Creative Technologist Profile</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Senior Creative Engineer</h3>
+</div>
+<button class="text-primary hover:text-secondary p-1" onclick="closeDevModal()">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<div class="py-6 space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>
+          Specializing in high-performance digital fashion ateliers, architectural design systems, and resilient frontend infrastructure.
+        </p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-3 bg-surface-container-low border border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">Core Architecture</span>
+<span class="text-primary font-medium">Tailwind CSS v3 · Vanilla JS · HTML5 Semantic Canvas</span>
+</div>
+<div class="p-3 bg-surface-container-low border border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">Design Rigor</span>
+<span class="text-primary font-medium">Strict Design Token Adherence · WCAG 2.1 AA</span>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Open to Select Atelier Commissions</span>
+<button class="px-5 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-secondary transition-colors" onclick="closeDevModal()">
+          Close Showcase
+        </button>
+</div>
+</div>
+</div>
+<!-- =========================================================================
+       20. TOAST NOTIFICATION
+  ========================================================================= -->
+<div class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-[80] bg-primary text-on-primary px-6 py-3 border border-outline shadow-2xl font-label-md text-label-md uppercase tracking-wider opacity-0 pointer-events-none transition-opacity duration-300 flex items-center gap-3" id="toast">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span id="toast-message">Action successful</span>
+</div>
+<!-- Back to Top Float Button -->
+<button aria-label="Back to Top" class="fixed bottom-6 right-6 z-40 bg-surface/90 backdrop-blur-md border border-outline-variant/40 p-3 text-primary shadow-lg hover:bg-primary hover:text-on-primary transition-all duration-300 opacity-0 pointer-events-none" id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+<!-- =========================================================================
+       21. INTERACTION LOGIC (VANILLA JS)
+  ========================================================================= -->
+<script>
+    // --- Preloader Simulation ---
+    window.addEventListener('load', () => {
+      let progress = 0;
+      const bar = document.getElementById('preloader-bar');
+      const text = document.getElementById('preloader-text');
+      const preloader = document.getElementById('preloader');
+
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 20) + 10;
+        if (progress > 100) progress = 100;
+        bar.style.width = progress + '%';
+        text.innerText = `INITIATING ATELIER · ${progress}%`;
+
+        if (progress >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.classList.add('opacity-0');
+            preloader.classList.add('pointer-events-none');
+            setTimeout(() => preloader.remove(), 750);
+          }, 350);
+        }
+      }, 60);
+    });
+
+    // --- Back to Top Visibility ---
+    window.addEventListener('scroll', () => {
+      const btt = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btt.classList.remove('opacity-0', 'pointer-events-none');
+      } else {
+        btt.classList.add('opacity-0', 'pointer-events-none');
+      }
+    });
+
+    // --- Toast Alert Helper ---
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.innerText = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    // --- Mobile Drawer Toggle ---
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const sideDrawer = document.getElementById('side-drawer');
+    const sideBackdrop = document.getElementById('side-drawer-backdrop');
+
+    function toggleMobileDrawer(open) {
+      if (open) {
+        sideBackdrop.classList.remove('hidden');
+        sideDrawer.classList.remove('-translate-x-full');
+      } else {
+        sideBackdrop.classList.add('hidden');
+        sideDrawer.classList.add('-translate-x-full');
+      }
+    }
+    if (mobileBtn) {
+      mobileBtn.addEventListener('click', () => toggleMobileDrawer(true));
+    }
+
+    // --- Cart Drawer Toggle ---
+    const cartDrawer = document.getElementById('cart-drawer');
+    const cartBackdrop = document.getElementById('cart-drawer-backdrop');
+    let currentCartTotal = 480;
+
+    function toggleCartDrawer(open) {
+      if (open) {
+        cartBackdrop.classList.remove('hidden');
+        cartDrawer.classList.remove('translate-x-full');
+      } else {
+        cartBackdrop.classList.add('hidden');
+        cartDrawer.classList.add('translate-x-full');
+      }
+    }
+
+    function quickAdd(productName, price) {
+      currentCartTotal += price;
+      document.getElementById('cart-subtotal').innerText = `$${currentCartTotal.toFixed(2)}`;
+      
+      const cartContainer = document.getElementById('cart-items');
+      const itemEl = document.createElement('div');
+      itemEl.className = 'flex gap-4 border-b border-outline-variant/20 pb-4';
+      itemEl.innerHTML = `
+        <div class="w-16 h-20 bg-surface-container shrink-0 overflow-hidden">
+          <img src="placeholder" data-alt="Thumbnail for ${productName} atelier piece." class="w-full h-full object-cover">
+        </div>
+        <div class="flex-1">
+          <h4 class="font-body-md text-body-md text-primary font-medium">${productName}</h4>
+          <span class="font-body-sm text-body-sm text-on-surface-variant block">Size M · Standard Atelier Cut</span>
+          <div class="flex justify-between items-center mt-2">
+            <span class="font-body-md text-body-md font-semibold text-primary">$${price}</span>
+            <button onclick="removeItem(this, ${price})" class="text-label-sm font-label-sm uppercase text-secondary hover:text-error">Remove</button>
+          </div>
+        </div>
+      `;
+      cartContainer.appendChild(itemEl);
+
+      const bagBadge = document.getElementById('bag-count');
+      bagBadge.innerText = parseInt(bagBadge.innerText || '1') + 1;
+
+      showToast(`Added "${productName}" to shopping bag.`);
+      toggleCartDrawer(true);
+    }
+
+    function removeItem(btn, price) {
+      btn.closest('.flex.gap-4').remove();
+      currentCartTotal = Math.max(0, currentCartTotal - price);
+      document.getElementById('cart-subtotal').innerText = `$${currentCartTotal.toFixed(2)}`;
+      const bagBadge = document.getElementById('bag-count');
+      const newCount = Math.max(0, parseInt(bagBadge.innerText || '1') - 1);
+      bagBadge.innerText = newCount;
+      showToast('Item removed from wardrobe.');
+    }
+
+    // --- Wishlist Toggle ---
+    function toggleWishlist(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.classList.contains('fill-icon')) {
+        icon.classList.remove('fill-icon', 'text-error');
+        showToast('Removed item from curated wishlist.');
+      } else {
+        icon.classList.add('fill-icon', 'text-error');
+        showToast('Saved to your private atelier wishlist.');
+      }
+    }
+
+    // --- Size Guide Modal & Units ---
+    const sizeData = {
+      in: [
+        { size: 'XS', chest: '34 - 36"', waist: '28 - 29"', hip: '35 - 36"' },
+        { size: 'S',  chest: '36 - 38"', waist: '30 - 31"', hip: '37 - 38"' },
+        { size: 'M',  chest: '39 - 41"', waist: '32 - 34"', hip: '39 - 41"' },
+        { size: 'L',  chest: '42 - 44"', waist: '35 - 37"', hip: '42 - 44"' },
+        { size: 'XL', chest: '45 - 47"', waist: '38 - 40"', hip: '45 - 47"' }
+      ],
+      cm: [
+        { size: 'XS', chest: '86 - 91 cm', waist: '71 - 74 cm', hip: '89 - 92 cm' },
+        { size: 'S',  chest: '92 - 97 cm', waist: '76 - 79 cm', hip: '94 - 97 cm' },
+        { size: 'M',  chest: '99 - 104 cm', waist: '81 - 86 cm', hip: '99 - 104 cm' },
+        { size: 'L',  chest: '107 - 112 cm', waist: '89 - 94 cm', hip: '107 - 112 cm' },
+        { size: 'XL', chest: '114 - 119 cm', waist: '96 - 102 cm', hip: '114 - 119 cm' }
+      ]
+    };
+
+    function renderSizeTable(unit) {
+      const tbody = document.getElementById('size-tbody');
+      tbody.innerHTML = '';
+      sizeData[unit].forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td class="py-3 px-3 font-semibold text-primary">${item.size}</td>
+          <td class="py-3 px-3 text-on-surface-variant">${item.chest}</td>
+          <td class="py-3 px-3 text-on-surface-variant">${item.waist}</td>
+          <td class="py-3 px-3 text-on-surface-variant">${item.hip}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    function setSizeUnit(unit) {
+      const btnIn = document.getElementById('unit-in');
+      const btnCm = document.getElementById('unit-cm');
+      if (unit === 'in') {
+        btnIn.className = 'px-3 py-1 text-label-sm font-label-sm uppercase bg-primary text-on-primary';
+        btnCm.className = 'px-3 py-1 text-label-sm font-label-sm uppercase bg-surface text-on-surface-variant';
+      } else {
+        btnCm.className = 'px-3 py-1 text-label-sm font-label-sm uppercase bg-primary text-on-primary';
+        btnIn.className = 'px-3 py-1 text-label-sm font-label-sm uppercase bg-surface text-on-surface-variant';
+      }
+      renderSizeTable(unit);
+    }
+    renderSizeTable('in');
+
+    function toggleSizeGuide(show) {
+      const modal = document.getElementById('size-modal');
+      if (show) modal.classList.remove('hidden');
+      else modal.classList.add('hidden');
+    }
+
+    // --- Search Modal ---
+    function toggleSearchModal() {
+      const modal = document.getElementById('search-modal');
+      modal.classList.toggle('hidden');
+      if (!modal.classList.contains('hidden')) {
+        setTimeout(() => document.getElementById('search-input').focus(), 100);
+      }
+    }
+
+    function fillSearch(val) {
+      const input = document.getElementById('search-input');
+      input.value = val;
+      liveSearch(val);
+    }
+
+    function liveSearch(val) {
+      const resContainer = document.getElementById('search-results');
+      if (!val.trim()) {
+        resContainer.innerHTML = '';
+        return;
+      }
+      const catalogItems = [
+        { name: 'Sculptural Wool Overcoat', price: '$480', cat: 'Outerwear' },
+        { name: 'Organic Raw Denim Jacket', price: '$290', cat: 'Outerwear' },
+        { name: 'Cashmere-Blend Turtleneck', price: '$210', cat: 'Tops' },
+        { name: 'Hemp-Linen Pleated Trousers', price: '$240', cat: 'Bottoms' },
+        { name: 'Architectural Trench Coat', price: '$480', cat: 'Outerwear' },
+        { name: 'Heavyweight Organic Tee', price: '$95', cat: 'Essentials' }
+      ];
+
+      const matches = catalogItems.filter(i => i.name.toLowerCase().includes(val.toLowerCase()) || i.cat.toLowerCase().includes(val.toLowerCase()));
+      if (matches.length === 0) {
+        resContainer.innerHTML = `<p class="py-4 text-on-surface-variant font-body-sm">No atelier silhouettes matching "${val}".</p>`;
+      } else {
+        resContainer.innerHTML = matches.map(m => `
+          <div class="py-3 flex justify-between items-center">
+            <div>
+              <span class="font-body-md text-primary font-medium block">${m.name}</span>
+              <span class="font-label-sm text-label-sm text-secondary uppercase">${m.cat}</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="font-body-md font-semibold text-primary">${m.price}</span>
+              <button onclick="toggleSearchModal(); quickAdd('${m.name}', ${parseInt(m.price.replace('$',''))});" class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase">Select</button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    // --- Lookbook Lightbox ---
+    const lookbookSlides = [
+      {
+        title: 'Theme 01 · Urban Minimalism',
+        desc: 'Sharp geometric contours meet Belgian unbleached flax. Styled for crisp transitions in metropolitan gallery environments.',
+        alt: 'Lookbook slide of urban minimalism outerwear in raw ecru and charcoal.'
+      },
+      {
+        title: 'Theme 02 · Earth & Form',
+        desc: 'Unstructured organic drape celebrating un-dyed hemp fibers and native mineral wash patinas against coastal sandstone.',
+        alt: 'Lookbook slide of natural layered robes in coastal terrain.'
+      },
+      {
+        title: 'Theme 03 · Autumn Layers',
+        desc: 'Double-faced regenerative Italian wool paired with Mongolian combed cashmere for enduring thermal insulation.',
+        alt: 'Lookbook slide of model in autumn forest setting wearing cashmere knitwear.'
+      }
+    ];
+    let activeLbIndex = 0;
+
+    function openLightbox(index) {
+      activeLbIndex = index;
+      updateLightboxContent();
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+    }
+
+    function changeLightbox(dir) {
+      activeLbIndex = (activeLbIndex + dir + lookbookSlides.length) % lookbookSlides.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      const slide = lookbookSlides[activeLbIndex];
+      document.getElementById('lb-counter').innerText = `Frame ${activeLbIndex + 1} of ${lookbookSlides.length}`;
+      document.getElementById('lb-title').innerText = slide.title;
+      document.getElementById('lb-desc').innerText = slide.desc;
+    }
+
+    // --- Store Locator Tabs ---
+    const storeInfo = {
+      soho: {
+        badge: 'Flagship Atelier',
+        title: 'New York · SoHo',
+        address: '428 Broome Street, New York, NY 10013',
+        hours: 'Monday – Saturday: 11:00 AM – 7:00 PM | Sunday: 12:00 PM – 6:00 PM',
+        phone: '+1 (212) 555-0182',
+        alt: 'Interior photo of SoHo LUMORA flagship with soaring loft ceilings and brass racks.'
+      },
+      paris: {
+        badge: 'Historic Marais Studio',
+        title: 'Paris · Le Marais',
+        address: '14 Rue de Turenne, 75004 Paris, France',
+        hours: 'Tuesday – Saturday: 10:30 – 19:30 | Monday: Private Appointments Only',
+        phone: '+33 1 42 68 00 11',
+        alt: 'Interior photo of Paris Le Marais atelier with limestone arches and natural wood display tables.'
+      },
+      tokyo: {
+        badge: 'Ginza Concept Haven',
+        title: 'Tokyo · Ginza',
+        address: '6-10-1 Ginza, Chuo City, Tokyo 104-0061',
+        hours: 'Daily: 11:00 AM – 20:00 PM JST',
+        phone: '+81 3 5555 0199',
+        alt: 'Interior of Tokyo Ginza atelier with cedar joinery and minimalist washi paper partitions.'
+      },
+      london: {
+        badge: 'Mayfair Townhouse',
+        title: 'London · Mayfair',
+        address: '32 Mount Street, Mayfair, London W1K 2RA',
+        hours: 'Monday – Saturday: 10:00 AM – 18:30 PM | Sunday: Closed',
+        phone: '+44 20 7946 0912',
+        alt: 'Interior photo of London Mayfair atelier featuring Georgian moldings and dark stone plinths.'
+      }
+    };
+
+    function showCityStore(key, btn) {
+      const data = storeInfo[key];
+      document.getElementById('store-badge').innerText = data.badge;
+      document.getElementById('store-title').innerText = data.title;
+      document.getElementById('store-address').innerText = data.address;
+      document.getElementById('store-hours').innerText = data.hours;
+      document.getElementById('store-phone').innerText = data.phone;
+
+      document.querySelectorAll('.store-city-btn').forEach(b => {
+        b.className = 'store-city-btn px-6 py-2.5 bg-surface hover:bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider border border-outline-variant/30';
+      });
+      btn.className = 'store-city-btn px-6 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider';
+    }
+
+    // --- Category Catalog Filtering & Sorting ---
+    function filterCatalog(category, btn) {
+      document.querySelectorAll('.catalog-tab').forEach(t => {
+        t.className = 'catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-surface hover:bg-surface-container text-on-surface-variant';
+      });
+      btn.className = 'catalog-tab px-5 py-2 font-label-md text-label-md uppercase tracking-wider whitespace-nowrap bg-primary text-on-primary';
+
+      const items = document.querySelectorAll('.catalog-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    function handleSortChange(val) {
+      const grid = document.getElementById('catalog-grid');
+      const items = Array.from(grid.querySelectorAll('.catalog-item'));
+
+      if (val === 'price-asc') {
+        items.sort((a, b) => parseFloat(a.dataset.price) - parseFloat(b.dataset.price));
+      } else if (val === 'price-desc') {
+        items.sort((a, b) => parseFloat(b.dataset.price) - parseFloat(a.dataset.price));
+      }
+      items.forEach(item => grid.appendChild(item));
+      showToast(`Catalog sorted by ${val.replace('-', ' ')}.`);
+    }
+
+    // --- Form Validations ---
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      let valid = true;
+
+      if (!name) {
+        document.getElementById('name-error').classList.remove('hidden');
+        valid = false;
+      } else {
+        document.getElementById('name-error').classList.add('hidden');
+      }
+
+      if (!email || !email.includes('@')) {
+        document.getElementById('email-error').classList.remove('hidden');
+        valid = false;
+      } else {
+        document.getElementById('email-error').classList.add('hidden');
+      }
+
+      if (!message) {
+        document.getElementById('message-error').classList.remove('hidden');
+        valid = false;
+      } else {
+        document.getElementById('message-error').classList.add('hidden');
+      }
+
+      if (valid) {
+        document.getElementById('contact-form').reset();
+        showToast('Inquiry dispatched to Atelier Concierge. We will reply within 24 hours.');
+      }
+    }
+
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const email = document.getElementById('nl-email').value;
+      if (email && email.includes('@')) {
+        document.getElementById('newsletter-form').reset();
+        showToast('Welcome to the LUMORA Circle. Check your inbox for your private lookbook invitation.');
+      }
+    }
+
+    // --- Developer Modal ---
+    function openDevModal() {
+      document.getElementById('dev-modal').classList.remove('hidden');
+    }
+    function closeDevModal() {
+      document.getElementById('dev-modal').classList.add('hidden');
+    }
+
+    // --- Escape key listener for all modals ---
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        toggleSizeGuide(false);
+        closeLightbox();
+        closeDevModal();
+        toggleCartDrawer(false);
+        toggleMobileDrawer(false);
+        const searchModal = document.getElementById('search-modal');
+        if (!searchModal.classList.contains('hidden')) searchModal.classList.add('hidden');
+      }
+    });
+  </script>
+</body></html>
